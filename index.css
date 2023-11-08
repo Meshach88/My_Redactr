@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital@1&family=Lilita+One&family=Pathway+Gothic+One&family=Staatliches&display=swap");
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: skyblue;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: row;
+    gap: 0;
+    height: 90px;
+    background-color: whitesmoke;
+    margin-bottom: 50px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+textarea {
+    resize: none;
+    padding: 4px;
+    overflow-y: auto;
+    box-sizing: border-box;
+    width: 400px;
+    height: 300px;
+}
+
+textarea:focus {
+    outline-color: black;
+}
+
+#userWords,
+#wordsToRedact {
+    border: 2px solid darkblue;
+    border-radius: 8px;
+    margin: 8px;
+    font-size: large;
+}
+
+#resetButton {
+    display: none;
+    width: 200px;
+    height: 50px;
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: "Lilita One", sans-serif;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+#redactButton {
+    display: flex;
+    width: 200px;
+    height: 50px;
+    background-color: darkblue;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+#redactButton:hover,
+#resetButton:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 50px;
+    height: 100px;
+    padding-left: 40px;
+}
+
+#mainTitle {
+    display: flex;
+    flex-direction: column;
+}
+
+#logos {
+    display: flex;
+    text-align: center;
+    gap: 60px;
+    margin-top: 10px;
+}
+
+#webDescription {
+    margin: 0;
+    font-family: "Arial";
+    color: darkblue;
+}
+
+#secondTextArea {
+    display: flex;
+}
+
+option,
+select {
+    font-family: "Lilita One", sans-serif;
+    color: white;
+}
+
+select {
+    display: none;
+    background-color: darkblue;
+}
+
+#redactWord {
+    width: 60px;
+    height: 40px;
+}
+
+#userChoice {
+    display: flex;
+    gap: 40px;
+}
+
+input {
+    display: none;
+    height: 30px;
+    width: 60px;
+    font-family: "Lilita One", sans-serif;
+    
+}
+
+input:focus {
+    outline-color: darkblue;
+}
+
+#preset,
+#userRedactWord {
+    color: grey;
+    font-family: "Arial";
+    font-size: 25px;
+}
+
+#preset:hover,
+#userRedactWord:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#resultStats {
+    display: none;
+    flex-direction: column;
+    gap: 0;
+}
+
+#statsTitle {
+    align-self: center;
+}
+
+#scrambledWords,
+#scannedWords,
+#numOfCharScrambled,
+#operationTime {
+    display: flex;
+    align-items: center;
+}
+
+#words,
+#scramWords,
+#characters,
+#time {
+    color: darkblue;
+    font-family: "Arial", sans-serif;
+}
+
+#noWord {
+    display: none;
+}
+
+#copy {
+    display: none;
+    align-self: flex-start;
+    margin-left: auto;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+#copy:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+#firstTextArea {
+    display: flex;
+    flex-direction: column;
+}
+
+#copied {
+    display: none;
+    color: darkblue;
+    position: relative;
+    top: 25px;
+    right: 35px;
+    /* align-self: flex-start; */
+    margin-left: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#operationTitle {
+    margin: 0;
+}
+
+.credit {
+    color: darkblue;
+    font-family: "Arial", sans-serif;
+}
+
+#ShareSafeLogo {
+    margin: 0;
+}

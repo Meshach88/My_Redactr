@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Redactr</title>
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+    <link rel="icon" type="image/x-icon" href="/Assets/Share_Safe-removebg-preview .png" />
+</head>
+
+<body>
+    <header>
+            <h2 id="webDescription">
+                Word Scramble App
+            </h2>
+        </section>
+    </header>
+    <main>
+        <h2 id="operationTitle">TYPE/PASTE YOUR WORDS</h2>
+        <section id="firstTextArea">
+            <h4 id="copied">Copied!</h4>
+            <textarea id="userWords"> </textarea>
+        </section>
+        <h2 id="noWord">No Words To Scramble</h2>
+        <section id="resultStats">
+            <h2 id="statsTitle">STATS</h2>
+            <section id="scannedWords">
+                <h3 id="words"></h3>
+            </section>
+            <section id="scrambledWords">
+                <h3 id="scramWords"></h3>
+            </section>
+            <section id="numOfCharScrambled">
+                <h3 id="characters"></h3>
+            </section>
+            <section id="operationTime">
+                <h3 id="time"></h3>
+            </section>
+        </section>
+        <h2 id="scrambleTitle">TYPE/PASTE WORDS TO BE SCRAMBLED</h2>
+        <section id="secondTextArea">
+            <textarea id="wordsToRedact"> </textarea>
+        </section>
+
+        <h2 id="">Pick a preset or type a word to be used to redact</h2>
+        <section id="userChoice">
+            <select id="redactWord">
+                <option value="****">****</option>
+                <option value="????">????</option>
+                <option value="////">////</option>
+                <option value="$$$$">$$$$</option>
+            </select>
+            <input type="text" maxlength="4" id="userPreset" />
+            <div id="preset">PRESET</div>
+            <div id="userRedactWord">TYPE WORD</div>
+        </section>
+
+        <section id="redactButton">
+            <h4>REDACT</h4>
+        </section>
+        <section id="resetButton">
+            <h4>RESET</h4>
+        </section>
+    </main>
+    <footer>
+        <!-- <h4 class="credit">&copy; WordScrambler @2023</h4> -->
+    </footer>
+    <script src="./index.js"></script>
+    <script src="./copy.js"></script>
+</body>
+
+</html>
